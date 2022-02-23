@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(180, 180, 180);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+.main-content {
+    min-height: 100vh;
+    width: 100vw;
+    background: url(img/bg-img.jpg);
+    background-size: cover;
+}
+
+.container {
+    min-height: 80vh;
+    background-color: rgba(8, 8, 8, 0.774);
+    border: 15px solid rgba(255, 255, 255, 0.144);
+    border-radius: 50px;
+}
+
+.temperature {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 90px;
+}
+
+.condition {
+    font-size: 30px;
+}
+.searchbar {
+    background-color: rgba(255, 255, 255, .2);
+    
+    padding: 5px 15px; 
+    border-radius: 5px;
+    min-width: 40%;
+}
+.searchbar > input {
+    background-color: transparent;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.searchbar > input::placeholder {
+    color: rgb(180, 180, 180);
+}
+#hourly-forecast::before {
+    display: block;
+    height: 1px;
+    width: 90%;
+    background-color: whitesmoke;
+    content: "Hourly Forecast";
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#forecast-item {
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+#daily-forecast {
+    border-left: 1px solid whitesmoke;
+    padding-left: 40px;
+}
+
+#current-condition-img {
+    max-height: 300px;
+    max-width: 300px;
+}
+#error-alert {
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    padding: 10px;
+    border: 2px solid rgba(0,0,0,.8);
+    border-radius: 10px;
+    color: rgba(0,0,0,.9) !important;
+    top: 5px;
+    right: 5px;
+    transform: translateX(110%);
+    transition: 1s;
+}
+
+#error-text {
+    color: rgba(190, 0, 0, 0.781);
+}
+
+@media only screen and (max-width: 780px) {
+    #current-condition-img {
+        max-height: 150px;
+        max-width: 150px;
+    }
+    .temperature {
+        font-size: 70px;
+    }
+    #current-temp-container{
+        padding: 2px !important;
+    }
+    .extra-temp-info{
+        width: 100% !important;
+    }
+    
+}
+@media only screen and (max-width: 992px) {
+    #daily-forecast {
+        border-left: none;
+    }
+    #daily-forecast::before {
+        display: block;
+        height: 1px;
+        width: 90%;
+        background-color: whitesmoke;
+        content: "";
+        text-align: center;
+        margin: 0 auto;
+    }
+}
