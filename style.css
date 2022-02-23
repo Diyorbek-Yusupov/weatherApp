@@ -8,9 +8,11 @@
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
 }
+
 body {
     overflow-x: hidden;
 }
+
 .main-content {
     min-height: 100vh;
     width: 100vw;
@@ -33,23 +35,27 @@ body {
 .condition {
     font-size: 30px;
 }
+
 .searchbar {
     background-color: rgba(255, 255, 255, .2);
-    
-    padding: 5px 15px; 
+
+    padding: 5px 15px;
     border-radius: 5px;
     min-width: 40%;
 }
-.searchbar > input {
+
+.searchbar>input {
     background-color: transparent;
     color: whitesmoke;
     border: none;
     outline: none;
     width: 100%;
 }
-.searchbar > input::placeholder {
+
+.searchbar>input::placeholder {
     color: rgb(180, 180, 180);
 }
+
 #hourly-forecast::before {
     display: block;
     height: 1px;
@@ -74,13 +80,14 @@ body {
     max-height: 300px;
     max-width: 300px;
 }
+
 #error-alert {
     position: absolute;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
     padding: 10px;
-    border: 2px solid rgba(0,0,0,.8);
+    border: 2px solid rgba(0, 0, 0, .8);
     border-radius: 10px;
-    color: rgba(0,0,0,.9) !important;
+    color: rgba(0, 0, 0, .9) !important;
     top: 5px;
     right: 5px;
     opacity: 0;
@@ -96,21 +103,26 @@ body {
         max-height: 150px;
         max-width: 150px;
     }
+
     .temperature {
         font-size: 70px;
     }
-    #current-temp-container{
+
+    #current-temp-container {
         padding: 2px !important;
     }
-    .extra-temp-info{
+
+    .extra-temp-info {
         width: 100% !important;
     }
-    
+
 }
+
 @media only screen and (max-width: 992px) {
     #daily-forecast {
         border-left: none;
     }
+
     #daily-forecast::before {
         display: block;
         height: 1px;
