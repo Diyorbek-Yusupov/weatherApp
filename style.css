@@ -81,7 +81,7 @@
     color: rgba(0,0,0,.9) !important;
     top: 5px;
     right: 5px;
-    transform: translateX(110%);
+    opacity: 0;
     transition: 1s;
 }
 

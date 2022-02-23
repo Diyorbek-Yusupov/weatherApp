@@ -107,9 +107,9 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 
 	function errorHandler() {
-		errorBox.style.transform = "translateX(0%)";
+		errorBox.style.opacity = 1;
 		setTimeout(() => {
-			errorBox.style.transform = "translateX(110%)"
+			errorBox.style.opacity = 0;
 		},5000)
 	}
 });
